@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateHome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="168dp"
+            android:layout_height="186dp"
+            android:src="@drawable/register_page_home"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/welcom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-20dp"
+
+            android:text="Welcome"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Create new Homey"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comm_name"
+            android:hint="Community name"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address_flat"
+            android:hint="Address : flat"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address_street"
+            android:hint="street"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address_city"
+            android:hint="city"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address_state"
+            android:hint="state"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pin"
+            android:hint="pincode"
+            android:inputType="number"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/bed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="24dp"
+                android:hint="No.of bed rooms"
+                android:textColor="@color/black"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/sq_ft"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="48dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_toEndOf="@+id/bed"
+                android:layout_toRightOf="@+id/bed"
+                android:hint="Square Feet"
+                android:inputType="text"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/rent"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bed"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Rent"
+                android:textColor="@color/black"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/advance"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sq_ft"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_toEndOf="@+id/rent"
+                android:layout_toRightOf="@+id/rent"
+                android:hint="Advance"
+                android:textColor="@color/black"
+                android:inputType="number" />
+
+
+            <TextView
+                android:id="@+id/text_img"
+                android:layout_width="348dp"
+                android:layout_height="44dp"
+                android:layout_below="@id/rent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center_horizontal"
+                android:text="Upload Images"
+                android:textSize="20dp" />
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="178dp"
+                android:layout_height="178dp"
+                android:layout_below="@id/text_img"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="21dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="178dp"
+                android:layout_height="178dp"
+                android:layout_below="@id/text_img"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="210dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+
+                />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="178dp"
+                android:layout_height="178dp"
+                android:layout_below="@id/imageView1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="31dp"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="0dp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="178dp"
+                android:layout_height="178dp"
+                android:layout_below="@+id/imageView2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="212dp"
+                android:layout_marginLeft="212dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="18dp" />
+
+            <Button
+                android:id="@+id/imageButton1"
+                android:layout_width="309dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:text="UPLOAD IMAGES" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/desc"
+            android:hint="Description"
+            android:inputType="text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="SUBMIT"
+            android:textSize="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:id="@+id/sub"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+
+

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateHome">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updhome"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Update Homey"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/upd_comm_name"
+            android:hint="Community name"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/upd_address_flat"
+            android:hint="Address : flat"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/upd_address_street"
+            android:hint="street"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/upd_address_city"
+            android:hint="city"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/upd_address_state"
+            android:hint="state"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/upd_pin"
+            android:hint="pincode"
+            android:inputType="number"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/upd_bed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="24dp"
+                android:hint="No.of bed rooms"
+                android:textColor="@color/black"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/upd_sq_ft"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="48dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_toEndOf="@+id/bed"
+                android:layout_toRightOf="@+id/bed"
+                android:hint="Square Feet"
+                android:inputType="text"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/upd_rent"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upd_bed"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Rent"
+                android:textColor="@color/black"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/upd_advance"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upd_sq_ft"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_toEndOf="@+id/rent"
+                android:layout_toRightOf="@+id/upd_rent"
+                android:hint="Advance"
+                android:textColor="@color/black"
+                android:inputType="number" />
+
+
+            <TextView
+                android:id="@+id/upd_text_img"
+                android:layout_width="348dp"
+                android:layout_height="44dp"
+                android:layout_below="@id/upd_rent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center_horizontal"
+                android:text="Upload Images"
+                android:textSize="20dp" />
+
+
+            <ImageView
+                android:id="@+id/upd_imageView1"
+                android:layout_width="178dp"
+                android:layout_height="178dp"
+                android:layout_below="@id/upd_text_img"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="21dp"
+                app:srcCompat="@android:drawable/ic_input_add"/>
+
+            <ImageView
+                android:id="@+id/upd_imageView2"
+                android:layout_width="178dp"
+                android:layout_height="178dp"
+                android:layout_below="@id/upd_text_img"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="210dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@android:drawable/ic_input_add"
+                />
+
+
+            <ImageView
+                android:id="@+id/upd_imageView3"
+                android:layout_width="178dp"
+                android:layout_height="178dp"
+                android:layout_below="@id/upd_imageView1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="31dp"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@android:drawable/ic_input_add"/>
+
+            <ImageView
+                android:id="@+id/upd_imageView4"
+                android:layout_width="178dp"
+                android:layout_height="178dp"
+                android:layout_below="@+id/upd_imageView2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="212dp"
+                android:layout_marginLeft="212dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="18dp"
+                app:srcCompat="@android:drawable/ic_input_add"/>
+
+        </RelativeLayout>
+
+
+
+
+        <Button
+            android:id="@+id/imgButton"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:text="UPLOAD IMAGES" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/upd_desc"
+            android:hint="Description"
+            android:inputType="text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="UPDATE"
+            android:textSize="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btnupdatehome"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+    </ScrollView>
